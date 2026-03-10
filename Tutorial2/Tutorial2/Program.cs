@@ -34,7 +34,11 @@ static string ReverseString(string input)
     return new string(chars);
 }
 
-
+/// <summary>
+/// Calculates the average value of an integer array.
+/// </summary>
+/// <param name="values">Array of integer values.</param>
+/// <returns>The average of the values.</returns>
 static double CalculateAverage(int[] values)
 {
     if (values == null || values.Length == 0)
