@@ -77,6 +77,15 @@ static int CalculateMin(int[] values)
     if (values == null || values.Length == 0)
         throw new ArgumentException("Array must not be null or empty.");
 
-    // TODO: implement finding minimum
-    return 0;
+    int min = values[0];
+
+    for (int i = 1; i < values.Length; i++)
+    {
+        if (values[i] < min)
+        {
+            min = values[i];
+        }
+    }
+
+    return min;
 }
