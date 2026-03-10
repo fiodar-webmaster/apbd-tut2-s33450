@@ -26,3 +26,10 @@ static bool IsPrime(int n)
     }
     return true;
 }
+
+static string ReverseString(string input)
+{
+    char[] chars = input.ToCharArray();
+    Array.Reverse(chars);
+    return new string(chars);
+}
