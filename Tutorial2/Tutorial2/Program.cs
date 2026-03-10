@@ -70,3 +70,8 @@ static int CalculateMax(int[] values)
 
     return max;
 }
+
+static int CalculateMin(int[] values)
+{
+    return values.Min();
+}
