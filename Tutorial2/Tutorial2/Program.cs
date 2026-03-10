@@ -71,7 +71,12 @@ static int CalculateMax(int[] values)
     return max;
 }
 
+
 static int CalculateMin(int[] values)
 {
-    return values.Min();
+    if (values == null || values.Length == 0)
+        throw new ArgumentException("Array must not be null or empty.");
+
+    // TODO: implement finding minimum
+    return 0;
 }
