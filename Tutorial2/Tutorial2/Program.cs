@@ -51,3 +51,22 @@ static double CalculateAverage(int[] values)
     }
     return (double)sum / values.Length;
 }
+
+
+static int CalculateMax(int[] values)
+{
+    if (values == null || values.Length == 0)
+        throw new ArgumentException("Array must not be null or empty.");
+
+    int max = values[0];
+
+    for (int i = 1; i < values.Length; i++)
+    {
+        if (values[i] > max)
+        {
+            max = values[i];
+        }
+    }
+
+    return max;
+}
