@@ -40,7 +40,7 @@ static int CalculateMax(int[] values)
 {
     if (values == null || values.Length == 0)
     {
-        throw new ArgumentException("Array cannot be null or empty");
+        throw new ArgumentException("Array must not be null or empty");
     }
 
     int max = values[0];
@@ -59,7 +59,7 @@ static int CalculateMin(int[] values)
 {
     if (values == null || values.Length == 0)
     {
-        throw new ArgumentException("Array cannot be null or empty");
+        throw new ArgumentException("Array must not be null or empty");
     }
 
     int min = values[0];
