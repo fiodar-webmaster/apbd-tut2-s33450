@@ -55,6 +55,24 @@ static int CalculateMax(int[] values)
     return max;
 }
 
+static int CalculateMin(int[] values)
+{
+    if (values == null || values.Length == 0)
+    {
+        throw new ArgumentException("Array cannot be null or empty");
+    }
+
+    int min = values[0];
+    foreach (int value in values)
+    {
+        if (value < min)
+        {
+            min = value;
+        }
+    }
+    return min;
+}
+
 Console.Write("Please enter your age: ");
 string? input = Console.ReadLine();
 
@@ -76,3 +94,4 @@ else
 {
     Console.WriteLine("Invalid input. Please enter a valid whole number for age.");
 }
+
