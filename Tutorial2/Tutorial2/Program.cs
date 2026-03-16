@@ -32,5 +32,5 @@ static double CalculateAverage(int[] values)
     {
         sum += value;
     }
-    return sum;
+    return sum/values.Length;
 }
