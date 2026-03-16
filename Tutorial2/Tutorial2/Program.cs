@@ -11,6 +11,11 @@ static double CalculateCircleArea(double radius)
     return Math.PI * Math.Pow(radius, 2);
 }
 
+static double GetHypotenuse(double a, double b)
+{
+    return Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
+}
+
 static double CelsiusToFahrenheit(double celsius)
 {
     return (celsius * 9 / 5) + 32;
