@@ -54,3 +54,25 @@ static int CalculateMax(int[] values)
 
     return max;
 }
+
+Console.Write("Please enter your age: ");
+string? input = Console.ReadLine();
+
+// We use int.TryParse to safely check if the user actually typed a number
+if (int.TryParse(input, out int age))
+{
+    bool checkAdult = IsAdult(age);
+    
+    if (checkAdult)
+    {
+        Console.WriteLine("Result: You are an adult.");
+    }
+    else
+    {
+        Console.WriteLine("Result: You are not an adult yet.");
+    }
+}
+else
+{
+    Console.WriteLine("Invalid input. Please enter a valid whole number for age.");
+}
