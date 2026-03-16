@@ -34,3 +34,22 @@ static double CalculateAverage(int[] values)
     }
     return sum/values.Length;
 }
+
+static int CalculateMax(int[] values)
+{
+    if (values == null || values.Length == 0)
+    {
+        throw new ArgumentException("Array cannot be null or empty");
+    }
+
+    int max = values[0];
+    foreach (int value in values)
+    {
+        if (value > max)
+        {
+            max = value;
+        }
+    }
+
+    return max;
+}
