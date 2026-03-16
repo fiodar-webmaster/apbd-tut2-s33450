@@ -1,4 +1,5 @@
 ﻿Console.WriteLine("Hello, World!");
+Console.WriteLine("This is a calculating program");
 
 static bool IsAdult(int age)
 {
